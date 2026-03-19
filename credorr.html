@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credorr — Chakratek</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+<header class="nav">
+   <a href="index.html" class="nav__logo">
+      <img src="logo.jpg" alt="Chakratek Logo" class="nav__logo-img">
+    </a>
+
+    <nav class="nav__right">
+      <a href="enquire.html" class="nav__enquire">
+        Enquire 📨
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO IMAGE ===================== -->
+  <section class="hero">
+    <div class="hero__image-wrap">
+      <!--
+        Replace src with your actual hero composite image.
+        Recommended: a landscape image showing all 3 phones side by side.
+        Placeholder dimensions: 1400 × 900
+      -->
+      <img
+        src="Credorr Hero.avif"
+        alt="Credorr app – three phone screens showcasing the UI"
+        class="hero__image"
+      />
+    </div>
+  </section>
+
+  <!-- ===================== META STRIP ===================== -->
+  <section class="meta" id="meta">
+    <div class="meta__inner">
+      <div class="meta__item">
+        <span class="meta__label">Client</span>
+        <span class="meta__value">Credorr</span>
+      </div>
+      <div class="meta__divider"></div>
+      <div class="meta__item">
+        <span class="meta__label">Role</span>
+        <span class="meta__value">UI / UX Design & App Development</span>
+      </div>
+      <div class="meta__divider"></div>
+      <div class="meta__item">
+        <span class="meta__label">Project Duration</span>
+        <span class="meta__value">11 Months</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OVERVIEW ===================== -->
+  <section class="overview">
+    <div class="overview__inner">
+
+      <div class="overview__left">
+        <h2 class="overview__heading">Overview</h2>
+        <div class="overview__actions">
+          <a href="#" class="overview__store-btn">
+            <i class="fab fa-apple"></i>
+            <span>Download on App Store</span>
+          </a>
+          <a href="#" class="overview__store-btn">
+            <i class="fab fa-google-play"></i>
+            <span>Download on Play Store</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="overview__right">
+        <p class="overview__body">
+          Credorr is a peer-to-peer betting application designed to make football predictions more social, transparent, and engaging. Unlike traditional betting platforms, Credorr allows users to challenge real people on real matches, creating a competitive experience built around trust and community.
+        </p>
+        <p class="overview__body">
+          Our role spanned the full product lifecycle, from product strategy and UX/UI design to development and implementation. We designed the user flows, interface, and interaction patterns, and also built the platform to ensure performance, reliability, and scalability. The experience was crafted with a strong focus on clarity, speed, and confidence, enabling users to place challenges, track bets, and manage their wallets seamlessly.
+        </p>
+        <p class="overview__body">
+          A bold yet minimal visual system supports intuitive navigation while reinforcing a sports-driven identity. In addition, we established design and product guidelines to maintain consistency as Credorr evolves with new features and platforms.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SHOWCASE SCREENS ===================== -->
+
+  <!--
+    Each .showcase block is a full-width image panel.
+    Replace each src with your actual screen export.
+    Recommended export: PNG at 1200px wide, any height.
+    Portrait images (phone screenshots) look best centered on a neutral bg.
+  -->
+
+  <section class="showcase showcase--grid-view" data-index="0">
+    <div class="showcase-grid">
+      <div class="showcase__image-wrap">
+        <img
+          src="Cred 1.png"
+          alt="Credorr – Splash screen"
+          class="showcase__image"
+          loading="lazy"
+        />
+      </div>
+      <div class="showcase__image-wrap">
+        <img
+          src="Cred 2.png"
+          alt="Credorr – Home listings screen"
+          class="showcase__image"
+          loading="lazy"
+        />
+      </div>
+      <div class="showcase__image-wrap">
+        <img
+          src="Cred 3.png"
+          alt="Credorr – Match detail screen"
+          class="showcase__image"
+          loading="lazy"
+        />
+      </div>
+      <div class="showcase__image-wrap">
+        <img
+          src="Cred 4.png"
+          alt="Credorr – Challenges and leaderboard screen"
+          class="showcase__image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__left">
+      <p class="footer__copy">Copyright &copy; 2025 Chakratek</p>
+    </div>
+    <nav class="footer__links">
+      <a href="enquire.html" class="footer__link">Enquire</a>
+      <a href="terms.html"   class="footer__link">Terms</a>
+      <a href="privacy.html" class="footer__link">Privacy</a>
+    </nav>
+    <div class="footer__socials">
+      <a href="https://www.linkedin.com/company/chakratek/" class="footer__social-btn" aria-label="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="footer__social-btn" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="footer__social-btn" aria-label="Twitter / X">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="credorr.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquire — Chakratek</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+   <a href="index.html" class="nav__logo">
+      <img src="logo.jpg" alt="Chakratek Logo" class="nav__logo-img">
+    </a>
+
+    <nav class="nav__right">
+      <a href="enquire.html" class="nav__enquire">
+        Enquire 📨
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+    <div class="enquire-container">
+
+      <!-- Header -->
+      <div class="enquire-header">
+        <h1 class="enquire-header__title">We're Here To Help</h1>
+        <p class="enquire-header__sub">Our team is ready to support you with expert advice &amp; solutions.</p>
+      </div>
+
+      <!-- Form -->
+      <form class="enquire-form" id="enquireForm" autocomplete="on" novalidate action="https://formsubmit.co/iceytoyourears@gmail.com" method="POST">
+
+        <!-- Row 1: Name + Email -->
+        <div class="form__row form__row--2col">
+          <div class="form__field">
+            <label class="form__label" for="name">Name*</label>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="David Johnson"
+              required
+              autocomplete="name"
+            />
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Email*</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+              autocomplete="email"
+            />
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Row 2: Company Name -->
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="company">
+              Company Name <em>(optional)</em>
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Ex. StaticMania"
+              autocomplete="organization"
+            />
+          </div>
+        </div>
+
+        <!-- Row 3: Select Service -->
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="service">Select Service*</label>
+            <div class="form__select-wrap">
+              <select class="form__select" id="service" name="service" required>
+                <option value="" disabled selected>Select Your Service</option>
+                <option value="web-design">Web Design</option>
+                <option value="web-development">Web Development</option>
+                <option value="web-design">App Design</option>
+                <option value="mobile-app">Mobile App Development</option>
+                <option value="branding">Branding &amp; Identity</option>
+                <option value="ui-ux">UI / UX Design</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form__select-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Row 4: Project Details -->
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="details">Project Details*</label>
+            <textarea
+              class="form__textarea"
+              id="details"
+              name="details"
+              placeholder="Tell us more about your project"
+              rows="5"
+              required
+            ></textarea>
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="form__row form__row--submit">
+          <button class="form__submit" type="submit">
+            <span class="form__submit-text">Submit</span>
+            <span class="form__submit-loader" aria-hidden="true"></span>
+          </button>
+          <p class="form__note">We will contact you within 24 business hours.</p>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__left">
+      <p class="footer__copy">Copyright &copy; 2025 Chakratek</p>
+    </div>
+
+    <nav class="footer__links">
+      <a href="enquire.html" class="footer__link">Enquire</a>
+      <a href="terms.html" class="footer__link">Terms</a>
+      <a href="privacy.html" class="footer__link">Privacy</a>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="https://www.linkedin.com/company/chakratek/" class="footer__social-btn" aria-label="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="footer__social-btn" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="footer__social-btn" aria-label="Twitter / X">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="enquire.js"></script>
+</body>
+</html>
