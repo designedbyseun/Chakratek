@@ -161,7 +161,7 @@
       // Use FormSubmit's AJAX endpoint
       const formData = new FormData(form);
 
-      fetch("https://formsubmit.co/ajax/iceytoyourears@gmail.com", {
+      fetch("https://formsubmit.co/ajax/ayomide@chakratek.co.uk", {
         method: "POST",
         body: formData
       })
